@@ -9,7 +9,6 @@ class Character:
     def change_weapon(self, weapon):
         self.weapon = weapon
 
-
 class Item:
     def __init__(self, name, price):
         self.name = name
@@ -35,3 +34,5 @@ class Potion(Item):
         super().__init__(name, price)
         self.effect = effect
         self.amount = amount
+
+"""https://replit.com/@ElNayrb/Onionpy#onion.py"""

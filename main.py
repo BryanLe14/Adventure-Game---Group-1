@@ -123,4 +123,11 @@ def main(world, fog_world, items, location) -> None:
 
 if __name__ == "__main__":
     """ This is executed when the file is run from the command line """
-    main(world, fog_world, items, location)
+    # main(world, fog_world, items, location)
+    import shop
+    store = shop.Shop([
+        # [name, cost, supply]
+        ['sword', 1000, 1],
+        ['arrows', 10, 100000],
+    ])
+    store.buy()
